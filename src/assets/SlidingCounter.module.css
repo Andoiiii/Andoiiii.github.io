@@ -1,0 +1,43 @@
+/* Center inner text by making each entry a flexbox */
+.Entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Entry p {
+  margin: 0px;
+}
+
+/* Align the counter to only show 1 Entry */
+.Counter {
+  font-weight: bold;
+  font-size: var(--font-height);
+  width: calc( 7 / 10 * var(--font-height) * var(--maxlen));
+  height: calc( var(--font-height) + var(--font-hang-size));
+  overflow: hidden;
+}
+.Entries {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.Entry {
+  text-align: center;
+  height: calc(var(--font-height) + var(--font-hang-size));
+}
+
+/* Animate Scrolling Effect */
+.Entries {
+ transition-property: margin-top;
+ transition-duration: 1s;
+ transition-timing-function: cubic-bezier(.57,.9,.78,1.29); /* overshoots */
+}
+
+/* Beautification */
+.Counter {
+  padding: calc(var(--font-hang-size) * 1/3) 5px;
+  background-color: #f75c03;
+  color: #1b1f3b;
+  border-radius: 5px;
+  border: 3px inset #5a7684;
+}
