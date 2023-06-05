@@ -1,0 +1,29 @@
+@import url(../index.css);
+
+.landing{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: max(2%,1em);
+  color: var(--light-outline-color);
+}
+
+.left p, .left h1, .left h2{
+  margin: 5px 0px;
+}
+
+.color {
+  color: var(--light-decorate-color);
+}
+
+
+.counterDeco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.counterDeco p {
+  margin-right: 1rem;
+}

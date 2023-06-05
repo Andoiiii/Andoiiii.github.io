@@ -7,7 +7,6 @@ let choiceArr = [
   "Software Dev in Training",
   "Math Person",
   "University Student",
-  "Madman",
   "Dragon",
   "Math Tutor",
   "CS/BBA Student",
@@ -20,8 +19,8 @@ let maxLen = choiceArr.reduce((acc,x) => Math.max(x.length, acc), 0);
 
 function SlideCounter() {
   const [ currEntry, setCurrEntry ] = useState(0);
-  const fontSize = 16;
-  const fontHangSize = 10;
+  const fontSize = 14;
+  const fontHangSize = 8;
 
   //go to a new, distinct entry every __ seconds
   useEffect( () => {

@@ -1,8 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Martian+Mono);
+@import url(https://fonts.googleapis.com/css?family=Geologica);
+
+:root { 
+  --light-outline-color: #1b1f3b;
+  --light-emphasis-color: #f75c03;
+  --light-contrast-color: #5a7684;
+  --light-background-color: #c7ede4;
+  --light-decorate-color: #a4243b;
+}
 
 body {
   margin: 0;
-  font-family: "Martian Mono", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  background-color: var(--light-background-color);
+  font-family: "Geologica", 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,6 +19,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: "Martian Mono", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
