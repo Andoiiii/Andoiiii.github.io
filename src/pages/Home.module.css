@@ -1,11 +1,12 @@
 @import url(../index.css);
 
 .landing{
+  margin: 10px max(2%,2em);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: max(2%,1em);
+  justify-content: center;
   color: var(--light-outline-color);
+  width: auto;
 }
 
 .left p, .left h1, .left h2{
@@ -16,12 +17,12 @@
   color: var(--light-decorate-color);
 }
 
-
 .counterDeco {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .counterDeco p {

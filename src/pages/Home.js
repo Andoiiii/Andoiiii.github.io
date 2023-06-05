@@ -18,6 +18,7 @@ function Home() {
       </div>
       <img src="../ColorPalette.jpg" alt="TODO: add images" />
     </div>
+
     </>
     
   );

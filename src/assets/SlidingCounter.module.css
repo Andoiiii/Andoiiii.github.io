@@ -6,28 +6,28 @@
 .Entry {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .Entry p {
   margin: 0px;
 }
 
 /* Align the counter to only show 1 Entry */
+.Entry {
+  height: calc(var(--font-height) + var(--font-hang-size));
+  width: 100%;
+}
 .Counter {
   font-weight: bold;
   font-size: var(--font-height);
-  width: calc( 7 / 10 * var(--font-height) * var(--maxlen));
+  width: min( 90vw, calc( 7 / 10 * var(--font-height) * var(--maxlen)));
   height: calc( var(--font-height) + var(--font-hang-size));
   overflow: hidden;
 }
 .Entries {
   display: flex;
   flex-direction: column;
-  width: auto;
-}
-.Entry {
-  text-align: center;
-  height: calc(var(--font-height) + var(--font-hang-size));
+  width: 100%;
 }
 
 /* Animate Scrolling Effect */
@@ -47,3 +47,8 @@
   border: 5px inset var(--light-contrast-color);
 }
 
+.Entry p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
