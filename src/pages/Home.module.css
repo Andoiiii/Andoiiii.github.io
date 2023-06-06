@@ -1,20 +1,37 @@
 @import url(../index.css);
 
-.landing{
-  margin: 10px max(2%,2em);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: var(--light-outline-color);
-  width: auto;
+/* decoration */
+.color {
+  color: var(--light-decorate-color);
 }
-
-.left p, .left h1, .left h2{
+.left p, .left h1, .left h2 {
   margin: 5px 0px;
 }
 
-.color {
-  color: var(--light-decorate-color);
+.landing {
+  color: var(--light-outline-color);
+}
+
+.counterImg {
+  background-color: var(--light-contrast-color);
+  padding: 10px;
+  border: 5px inset var(--light-outline-color);
+  border-radius: 15px;
+}
+ 
+/* Positioning and sizing */
+.counterImg {
+  width: min(100%, 300px);
+  height: auto;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px max(2%, 2rem);
 }
 
 .counterDeco {
@@ -22,9 +39,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .counterDeco p {
-  margin-right: 1rem;
+  margin-right: 1em; /* would use gap but that messes up when wrapped */
 }

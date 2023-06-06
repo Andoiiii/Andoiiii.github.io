@@ -1,4 +1,4 @@
-function Projects() {
+function Projects () {
   return (
     <>
     <h1>Ha, I have none. lame. what a travesty.</h1>
@@ -6,4 +6,4 @@ function Projects() {
   )
 }
 
-export default Projects;
+export default Projects
