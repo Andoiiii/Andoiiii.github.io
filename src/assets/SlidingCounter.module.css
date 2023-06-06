@@ -20,7 +20,7 @@
 .Counter {
   font-weight: bold;
   font-size: var(--font-height);
-  width: min( 90vw, calc( 7 / 10 * var(--font-height) * var(--maxlen)));
+  width: min(90vw max-content);
   height: calc( var(--font-height) + var(--font-hang-size));
   overflow: hidden;
 }

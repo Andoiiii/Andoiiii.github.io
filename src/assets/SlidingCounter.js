@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react'
 // and scrolls to different ones
 
 const choiceArr = [
-  'Software Dev in Training',
-  'Math Person',
-  'University Student',
-  'Dragon',
+  'Software Dev (Ideally)',
+  'Math Enjoyer',
   'Math Tutor',
-  'CS/BBA Student',
-  'Friend :)',
+  'University Student',
+  'BCS/BBA Student',
   'Nerd',
+  'OSRS Gamer',
+  'Dragon',
   'Bad Artist',
   'Archivist'
 ]
