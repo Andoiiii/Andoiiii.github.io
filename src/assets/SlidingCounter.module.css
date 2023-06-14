@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Martian+Mono);
 @import url(../index.css);
 
-
 /* Center inner text by making each entry a flexbox */
 .Entry {
   display: flex;
@@ -20,8 +19,7 @@
 .Counter {
   font-weight: bold;
   font-size: var(--font-height);
-  width: min(90vw max-content);
-  height: calc( var(--font-height) + var(--font-hang-size));
+  height: calc(var(--font-height) + var(--font-hang-size));
   overflow: hidden;
 }
 .Entries {
@@ -32,20 +30,22 @@
 
 /* Animate Scrolling Effect */
 .Entries {
- transition-property: margin-top;
- transition-duration: 1s;
- transition-timing-function: cubic-bezier(.57,.9,.78,1.29); /* overshoots */
+  transition-property: margin-top;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.57, 0.9, 0.78, 1.29); /* overshoots */
 }
 
 /* Beautification */
 .Counter {
   font-family: "Martian Mono", monospace;
-  padding: calc(var(--font-hang-size) * 1/3) 5px;
+  padding: calc(var(--font-hang-size) * 1 / 3) 5px;
   background-color: var(--light-emphasis-color);
   color: var(--light-outline-color);
   border-radius: 3px;
   border: 5px inset var(--light-contrast-color);
 }
+
+/* Allow thing to get compressed */
 
 .Entry p {
   white-space: nowrap;

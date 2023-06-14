@@ -1,49 +1,37 @@
-import styles from './SlidingCounter.module.css'
-import { useState, useEffect } from 'react'
-// goal: a counter-esque object that displays different strings
-// and scrolls to different ones
+import styles from "./SlidingCounter.module.css";
+import { counterData } from "./CounterData";
 
-const choiceArr = [
-  'Software Dev (Ideally)',
-  'Math Enjoyer',
-  'Math Tutor',
-  'University Student',
-  'BCS/BBA Student',
-  'Nerd',
-  'OSRS Gamer',
-  'Dragon',
-  'Bad Artist',
-  'Archivist'
-]
-const maxLen = choiceArr.reduce((acc, x) => Math.max(x.length, acc), 0)
+const choiceArr = counterData.map((x) => {
+  const { tag } = x;
+  return tag;
+});
 
-function SlideCounter () {
-  const [currEntry, setCurrEntry] = useState(0)
-  const fontSize = 14
-  const fontHangSize = 8
-
-  // go to a new, distinct entry every __ seconds
-  useEffect(() => {
-    const tickOver = setInterval(() => {
-      let x = currEntry
-      while (x === currEntry) { x = Math.floor(Math.random() * choiceArr.length) }
-      setCurrEntry(x)
-    }, 3000)
-    return () => clearInterval(tickOver)
-  }, [currEntry])
-
-  const fontStyles = { '--font-height': fontSize + 'px', '--maxlen': maxLen, '--font-hang-size': fontHangSize + 'px' }
-  const slideStyle = { marginTop: (-1 * (currEntry * (fontHangSize + fontSize))) }
+function SlideCounter({ currEntry }) {
+  
+  // Variables needed to Achieve CSS Sliding Effect
+  const fontSize = 14;
+  const fontHangSize = 8;
+  const fontStyles = {
+    "--font-height": fontSize + "px",
+    "--font-hang-size": fontHangSize + "px",
+  };
+  const slideStyle = {
+    marginTop: -1 * (currEntry * (fontHangSize + fontSize)),
+  };
 
   return (
     <>
       <div style={fontStyles} className={styles.Counter}>
         <div className={styles.Entries} style={slideStyle}>
-          {choiceArr.map((x, ind) => <div className={styles.Entry} key={ind}><p>{x}</p></div>)}
+          {choiceArr.map((x, ind) => (
+            <div className={styles.Entry} key={ind}>
+              <p>{x}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export { SlideCounter }
+export { SlideCounter };

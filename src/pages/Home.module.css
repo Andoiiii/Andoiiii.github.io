@@ -1,31 +1,18 @@
 @import url(../index.css);
 
-/* decoration */
+/* Top Landing Section*/
 .color {
   color: var(--light-decorate-color);
 }
-.left p, .left h1, .left h2 {
+
+.left p,
+.left h1,
+.left h2 {
   margin: 5px 0px;
 }
 
 .landing {
   color: var(--light-outline-color);
-}
-
-.counterImg {
-  background-color: var(--light-contrast-color);
-  padding: 10px;
-  border: 5px inset var(--light-outline-color);
-  border-radius: 15px;
-}
- 
-/* Positioning and sizing */
-.counterImg {
-  width: min(100%, 300px);
-  height: auto;
-}
-
-.landing {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -43,4 +30,30 @@
 
 .counterDeco p {
   margin-right: 1em; /* would use gap but that messes up when wrapped */
+}
+
+/* Bottom About Me Section */
+hr {
+  border: 3px var(--light-outline-color) dashed;
+}
+
+.about {
+  margin: 10px max(5%, 5rem) 5%;
+  color: var(--light-outline-color);
+}
+
+.about a {
+  text-decoration: none;
+  color: var(--light-emphasis-color);
+  font-weight: bold;
+}
+
+.about .emote{
+  font-size: 24px;
+}
+
+.about p {
+  background-color: var(--light-contrast-color-trans);
+  padding: 5px;
+  border-radius: 5px;
 }
