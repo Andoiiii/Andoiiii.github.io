@@ -38,7 +38,7 @@ hr {
 }
 
 .about {
-  margin: 10px max(5%, 5rem) 5%;
+  margin: 10px max(5%, 2rem) 5%;
   color: var(--light-outline-color);
 }
 

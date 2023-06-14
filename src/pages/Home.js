@@ -5,12 +5,12 @@ import { CounterImages } from "../assets/CounterImages";
 import { genNewCounterEntry } from "../assets/CounterData";
 
 function Home() {
-  // State and Effect to change subtitle & img shown every 5 seconds
+  // State and Effect to change subtitle & img shown every __ seconds
   const [currEntry, setCurrEntry] = useState(0);
   useEffect(() => {
     const tickOver = setInterval(() => {
       setCurrEntry(genNewCounterEntry(currEntry));
-    }, 3000);
+    }, 5000);
     return () => clearInterval(tickOver);
   }, [currEntry]);
 
