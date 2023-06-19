@@ -1,0 +1,17 @@
+@import url('../index.css');
+
+.all {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 10% 25%;
+}
+
+.all h1, .all h2, .all p {
+  margin: 10px;
+}
+
+.all h1 {
+  font-size: 72px;
+  color: var(--light-decorate-color);
+}

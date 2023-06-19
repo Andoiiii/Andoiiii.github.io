@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Geologica);
 
-:root { 
+:root {
   --light-outline-color: #1b1f3b;
   --light-emphasis-color: #f75c03;
   --light-contrast-color: #5a7684;
@@ -12,14 +12,13 @@
 body {
   margin: 0;
   background-color: var(--light-background-color);
-  font-family: "Geologica", 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Geologica", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "Martian Mono", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Martian Mono", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
 }

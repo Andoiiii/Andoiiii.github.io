@@ -1,0 +1,99 @@
+@import url(../index.css);
+
+#Navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center; /*center align text*/
+  padding: 10px;
+  background-color: var(--light-outline-color);
+
+  /* sticky header! */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+}
+
+.navUl {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.divider {
+  width: 2px;
+  height: 1em;
+  margin: 0px 16px;
+  background-color: var(--light-background-color);
+  flex-shrink: 0;
+}
+
+.link {
+  color: var(--light-background-color);
+  padding: 0px 8px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+#title {
+  color: var(--light-background-color);
+  font-weight: 700;
+  font-size: 24px;
+  flex-shrink: 0;
+  margin-right: 50px;
+  background-color: var(--light-contrast-color);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#menuButton {
+  background-color: transparent;
+  border: none;
+}
+
+#menuButton #inner {
+  color: white;
+  height: 1.25rem;
+}
+
+#ddLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 999;
+  background-color: var(--light-outline-color);
+  padding: 10px;
+  right: 0px;
+}
+
+#ddLinks .link {
+  padding: 2px 0px;
+}
+
+.link:hover {
+  color: var(--light-emphasis-color);
+}
+
+.onPage {
+  text-decoration: underline;
+}
+
+/* small screen accessibility */
+#DropDown {
+  display: none;
+}
+@media (max-width: 800px) {
+  #links {
+    display: none;
+  }
+  #DropDown {
+    display: block;
+  }
+}

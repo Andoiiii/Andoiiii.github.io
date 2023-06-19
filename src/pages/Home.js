@@ -36,7 +36,7 @@ function Home() {
       </div>
       <hr />
       <div className={styles.about}>
-        <h1>Formal About Me</h1>
+        <h1>About Me</h1>
         <p>
           So, hi! Welcome to my little corner of the internet. I'm a first year{" "}
           <a href="https://uwaterloo.ca/future-students/programs/business-administration-computer-science-double-degree">
@@ -50,9 +50,8 @@ function Home() {
         </p>
         <p>
           I love maths 🧮, and during high school I used to do a lot of Math
-          contests. I remember this one time in Grade 10 I ranked Top 15
-          Nationally in Canada in the{" "}
-          <a href="https://www.cemc.uwaterloo.ca/contests/csimc.html">CSMC</a>,
+          contests. In 2019 I ranked Top 15 Nationally in Canada in the{" "}
+          <a href="https://www.cemc.uwaterloo.ca/contests/csimc.html">CIMC</a>,
           so that was neat. I also am very passionate about Math Tutoring and
           have been tutoring since I was 14.
         </p>
