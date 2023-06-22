@@ -8,6 +8,7 @@ import Navbar from "./assets/Navbar";
 import Home from "./pages/Home";
 import Projects from "./Projects";
 import OhNo from "./pages/404";
+import About from "./pages/About";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +16,7 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route index element={<><Navbar openPage="Home" /><Home /></>} />
+          <Route path="/about" element={<><Navbar openPage="About" /><About /></>} />
           <Route path="/projects" element={<><Navbar openPage="Projects" /><Projects /></>} />
           <Route path="/resume" element={<><Navbar openPage="Resume" /><OhNo /></>} />
           <Route path="/art" element={<><Navbar openPage="Art" /><OhNo /></>} />

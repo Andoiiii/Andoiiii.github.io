@@ -47,7 +47,6 @@
   font-weight: 700;
   font-size: 24px;
   flex-shrink: 0;
-  margin-right: 50px;
   background-color: var(--light-contrast-color);
   border-radius: 5px;
   padding: 2px;
@@ -71,6 +70,7 @@
   background-color: var(--light-outline-color);
   padding: 10px;
   right: 0px;
+  top: 50px;
 }
 
 #ddLinks .link {
@@ -89,7 +89,7 @@
 #DropDown {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   #links {
     display: none;
   }

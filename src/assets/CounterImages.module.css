@@ -11,12 +11,12 @@
   top: 0;
   bottom: 0;
 
-  width: min(calc(100% - 30px), 300px);
+  width: min(calc(100% - 30px), 375px);
   aspect-ratio: 1/1;
 }
 
 .ImageWrapper {
-  width: min(calc(100% - 30px), 300px);
+  width: min(calc(100% - 30px), 375px);
   aspect-ratio: 1/1;
 
   position: relative;

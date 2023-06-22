@@ -39,6 +39,14 @@ export default function Navbar({ openPage }) {
         />
       </div>
       <div id={styles.links}>
+      <ul className={styles.navUl}>
+          <HighlightableLink
+            highlight={openPage === "About"}
+            href="/about"
+            display="About"
+          />
+        </ul>
+        <div className={styles.divider}></div>
         <ul className={styles.navUl}>
           <HighlightableLink
             highlight={openPage === "Projects"}
@@ -80,6 +88,12 @@ export default function Navbar({ openPage }) {
         </button>
         {dropDownOn ? (
           <div id={styles.ddLinks}>
+            <HighlightableLink
+            highlight={openPage === "About"}
+            href="/about"
+            display="About"
+            clickHandler={handleSwitchPage}
+          />
             <HighlightableLink
               highlight={openPage === "Projects"}
               href="/projects"

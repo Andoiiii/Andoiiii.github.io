@@ -9,7 +9,7 @@ const choiceArr = counterData.map((x) => {
 function SlideCounter({ currEntry }) {
   
   // Variables needed to Achieve CSS Sliding Effect
-  const fontSize = 14;
+  const fontSize = 16;
   const fontHangSize = 8;
   const fontStyles = {
     "--font-height": fontSize + "px",

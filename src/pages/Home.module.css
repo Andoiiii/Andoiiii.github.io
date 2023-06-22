@@ -18,7 +18,7 @@
   gap: 20px;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px max(2%, 2rem);
+  margin: max(5%,20px) max(2%, 2rem);
 }
 
 .counterDeco {
@@ -32,28 +32,18 @@
   margin-right: 1em; /* would use gap but that messes up when wrapped */
 }
 
-/* Bottom About Me Section */
-hr {
-  border: 3px var(--light-outline-color) dashed;
+.counterDeco + p {
+ margin-top: 20px;
 }
 
-.about {
-  margin: 10px max(5%, 2rem) 5%;
-  color: var(--light-outline-color);
+p {
+  font-size: 18px;
 }
 
-.about a {
-  text-decoration: none;
-  color: var(--light-emphasis-color);
-  font-weight: bold;
+h1 {
+  font-size: 40px;
 }
 
-.about .emote{
-  font-size: 24px;
-}
-
-.about p {
-  background-color: var(--light-contrast-color-trans);
-  padding: 5px;
-  border-radius: 5px;
+h2 {
+  font-size: 30px;
 }
