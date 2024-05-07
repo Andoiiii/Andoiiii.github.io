@@ -1,0 +1,42 @@
+#ThemeWrapper {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background);
+}
+
+/* Light Mode */
+.light {
+    --text: hsl(0, 37%, 8%);
+    --background: hsl(171, 91%, 95%);
+    --primary: hsl(192, 58%, 70%);
+    --secondary: hsl(223, 71%, 74%);
+    --accent: hsl(77, 49%, 58%);
+}
+
+/* Dark Mode */
+.dark {
+    --text: hsl(0, 35%, 92%);
+    --background: hsl(0, 3%, 8%);
+    --primary:hsl(193, 45%, 35%);
+    --secondary: hsl(223, 71%, 30%);
+    --accent: hsl(77, 36%, 52%);
+}
+
+/* Grayscale Mode */
+.grayscale {
+    --text: hsl(0, 0%, 87%);
+    --background: hsl(193, 60%, 3%);
+    --primary: hsl(0, 0%, 24%);
+    --secondary: hsl(0, 0%, 49%);
+    --accent: hsl(72, 3%, 72%);
+}
+
+/* Neon Mode */
+.neon {
+    --text: hsl(0, 0%, 9%);
+    --background: hsl(180, 100%, 50%);
+    --primary: hsl(60, 100%, 50%);
+    --secondary: hsl(300, 100%, 50%);
+    --accent: hsl(120, 100%, 50%);
+}
