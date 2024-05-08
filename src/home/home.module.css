@@ -1,0 +1,17 @@
+.primaryBg {
+    background-color: var(--primary);
+    width: 200px
+}
+
+.secondaryBg {
+    background-color: var(--secondary);
+    width: 200px
+}
+
+.text {
+    color: var(--text);
+}
+
+.accent {
+    color: var(--accent);
+}
