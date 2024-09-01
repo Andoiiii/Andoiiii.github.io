@@ -1,0 +1,37 @@
+/* -- Layout for the Home Page -- */
+
+/* Center content of the page using the body */
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px max(10%, 50px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layout left (decor) and right (title) content to each other */
+#page {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+#decor-container {
+    flex: 1 1 auto;
+}
+#title-container {
+    flex: 1 1 auto;
+}
+
+
+
+#decor-container {
+    min-height: 500px;
+    width: 500px;
+    background-color: firebrick;
+    z-index: 2;
+}

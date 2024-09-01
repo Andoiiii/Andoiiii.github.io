@@ -1,0 +1,43 @@
+/* -- Setup for the Title and Animations -- */
+
+#title-container {
+    --text-shadow-color: #72b8d2ff;
+    --text-size: clamp(2rem, 10vw, 5rem);
+}
+
+/* Layout and Sizing for title text */
+#title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--text-size);
+    gap: calc( 1/4 * var(--text-size));
+}
+#title-container div {
+    display: flex;
+    gap: calc( 1/2 * var(--text-size));
+    justify-content: center;
+}
+
+/* Setup Variable Animation */
+@keyframes titleWiggle {
+    from {
+        transform: translateX(var(--animation-distance-start, 0px)) rotate(var(--animation-rotation-start, 0deg));
+    }
+
+    50% {
+        transform: translateX(var(--animation-distance, 0px)) rotate(var(--animation-rotation, 0deg));
+    }
+
+    to {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+.title {
+    animation-name: titleWiggle;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
