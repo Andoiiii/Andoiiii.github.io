@@ -38,5 +38,6 @@ function updateTitleShading(mouseEvent) {
         e.style.textShadow = `${xOffset}px ${yOffset}px 18px var(--text-shadow-color)`;
     })
 }
+
 window.addEventListener('mousemove', updateTitleShading);
 

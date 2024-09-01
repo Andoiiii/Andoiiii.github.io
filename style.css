@@ -11,6 +11,10 @@
   color: #f1f4f6;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
 /* Set Up Tiled Background - use pseudo-element to rotate */
 #background {
     height: 100%;
