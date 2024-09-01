@@ -1,5 +1,4 @@
 /* -- Setup for the Title and Animations -- */
-
 #title-container {
     --text-shadow-color: #72b8d2ff;
     --text-size: clamp(2rem, 10vw, 5rem);
@@ -42,7 +41,7 @@
     animation-direction: alternate;
 }
 
-/* Default Text Shadow */
+/* Default Text Shadow (Accessibility - No Mouse) */
 .title {
     text-shadow: 0px 0px 18px var(--text-shadow-color);
 }

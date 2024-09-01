@@ -2,17 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-  font-family: 'Merriweather Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 300;
+    font-family: 'Merriweather Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 300;
 
-  --tile-color: #2b312f;
-  --background-color: #484d4b;
-  background-color: var(--background-color);
-  color: #f1f4f6;
+    --tile-color: #2b312f;
+    --tile-color-80: #2b312fcd;
+    --background-color: #484d4b;
+    --background-color-80: #484d4bcd;
+    --text-color: #f1f4f6;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
+/* Default Overides */
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 /* Set Up Tiled Background - use pseudo-element to rotate */
@@ -32,7 +42,60 @@ h1, h2, h3, h4, h5, h6 {
     top: -100vh;
     width: 300vw;
     height: 300vh;
-    background-size: 25px;
+    background-size: 30px;
     transform: rotate(45deg);
     z-index: -1;
+}
+
+/* Body takes up the whole page */
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: scroll;
+}
+
+/* Layout for Nav - hovers above other content */
+.nav-flex {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: var(--tile-color-80);
+    padding: 0px 1em;
+    border-radius: 1em 1em 0 0;
+    border: var(--background-color-80) 3px solid;
+    border-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0em 1em;
+}
+
+nav a i {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+}
+
+i.bi-dot {
+    font-size: 2em;
+}
+
+div.disabled {
+    pointer-events: none;
+}
+
+nav .nav-link:hover {
+    font-size: 1.8em;
+}
+
+/* Text for screenreaders. Hidden for everyone else */
+nav a span {
+    display: none;
 }

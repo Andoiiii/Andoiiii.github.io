@@ -1,13 +1,5 @@
 /* -- Layout for the Home Page -- */
 
-/* Body takes up the whole page */
-body {
-    
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    overflow-y: scroll;
-}
 
 /* Layout content - Decor Left, Title Right */
 #page {
@@ -30,4 +22,9 @@ body {
 
 #title-container {
     flex: 0 1 50%;
+}
+
+/* Navigation Menu needs space */
+#page {
+    padding-bottom: 3.5em;
 }
