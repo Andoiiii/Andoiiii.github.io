@@ -1,37 +1,63 @@
 /* -- Layout for the Home Page -- */
 
-/* Center content of the page using the body */
+/* Body takes up the whole page */
 body {
     box-sizing: border-box;
     height: 100vh;
     margin: 0px;
-    padding: 0px max(10%, 50px);
+    padding: 0px;
+}
 
+/* Background Tiling */
+#background {
+    height: 100%;
+    width: 100%;
+    
+    /* Create a stacking context for the background */
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+/* #background::before {
+    content: "";
+    position: absolute;
+    background-image: url('/scaleTile.svg');
+    left: -75vw;
+    top: -75vh;
+    width: 250vw;
+    height: 250vh;
+    background-size: 25px;
+    background-repeat: infinite;
+    transform: rotate(45deg);
+    z-index: -1;
+} */
+
+
+/* Center content of the page using the body */
+body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Layout left (decor) and right (title) content to each other */
 #page {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10%;
 }
 #decor-container {
-    flex: 1 1 auto;
+    flex: 0 1 500px;
 }
 #title-container {
-    flex: 1 1 auto;
+    flex: 0 1 600px;
 }
 
-
-
 #decor-container {
-    min-height: 500px;
-    width: 500px;
+    height: 500px;
     background-color: firebrick;
     z-index: 2;
 }
+
