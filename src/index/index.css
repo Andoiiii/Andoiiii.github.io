@@ -15,11 +15,6 @@
     flex-flow: row wrap;
 }
 
-#decor-container {
-    background-color: firebrick;
-    width: 500px;
-}
-
 #title-container {
     flex: 0 1 50%;
 }
