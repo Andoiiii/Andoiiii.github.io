@@ -5,14 +5,14 @@
 }
 
 /* Layout and Sizing for title text */
-#title-container {
+#title-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: var(--text-size);
     gap: calc( 1/4 * var(--text-size));
 }
-#title-container div {
+#title-text div {
     display: flex;
     gap: calc( 1/2 * var(--text-size));
     justify-content: center;
@@ -41,7 +41,26 @@
     animation-direction: alternate;
 }
 
-/* Default Text Shadow (Accessibility - No Mouse) */
-.title {
-    text-shadow: 0px 0px 18px var(--text-shadow-color);
+/* Text Shadow is just a blob behind the background */
+#title-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#title-shadow {
+    width: clamp(20vw, calc(5 * var(--text-size)), 30vw);
+    aspect-ratio: 1/1;
+    background: rgb(237,132,34);
+    background: radial-gradient(circle, 
+        rgba(237,132,34,1) 0%, 
+        rgba(194,193,117,0.8) 70%, 
+        rgba(63,94,251,0.1) 90%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -3;
+    clip-path: ellipse(50% 35% at 50% 50%);
+    filter: saturate(300%) blur(100px) opacity(0.8);
 }

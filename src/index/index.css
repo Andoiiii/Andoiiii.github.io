@@ -4,22 +4,29 @@
 #page-flex {
     box-sizing: border-box;
     padding: 1em clamp(2%, 25px, 5%);
+    
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+}
+/* Manual Hack to ensure subtitles don't get covered up. Its... eugh */
+@media (min-width: 683px) {
+    #page-flex {
+        height: 100vh;
+    }
 }
 
 /* Layout content - Decor Left, Title Right; unless it is too small */
 #page {
     box-sizing: border-box;
-    height: min-content;
+    height: max-content;
     width: 100%;
     padding: 0px;
 
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: clamp(1em, 2%, 3em);
+    gap: clamp(0.5em, 1%, 3em);
     flex-flow: row wrap;
 }
 
@@ -29,6 +36,10 @@
 
 #decor-container {
     flex: 0 1 300px;
+}
+
+#subtitle-container {
+    flex: 1 1 100%;
 }
 
 /* Navigation Menu needs space */

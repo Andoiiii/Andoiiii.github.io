@@ -1,0 +1,8 @@
+#subtitle-container {
+    z-index: 1;
+    text-align: center;
+}
+
+#subtitle-container h3 {
+    font-size: 1em;
+}

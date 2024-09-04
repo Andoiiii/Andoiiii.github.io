@@ -14,6 +14,7 @@
     <script defer type="module" src="./src/index/index.js"></script>
     <script defer type="module" src="./src/index/title.js"></script>
     <script defer type="module" src="./src/index/decor.js"></script>
+    <script defer type="module" src="./src/index/subtitle.js"></script>
 
     <body>
         <div id="background"></div>
@@ -29,7 +30,7 @@
 
         <div id="page-flex">
             <div id="page">
-                <div id="decor-container">
+                <div id="decor-container" aria-hidden="true">
                         <svg>
                             <defs>
                                 <radialGradient id="grad">
@@ -43,21 +44,28 @@
                         <div id="bottom-disc" class="disc"></div>
                 </div>
             
-                <h1 id="title-container">
-                    <div>
-                        <span class="title">A</span>
-                        <span class="title">N</span>
-                        <span class="title">D</span>
-                        <span class="title">Y</span>
-                    </div>
-                    <div>
-                        <span class="title">C</span>
-                        <span class="title">H</span>
-                        <span class="title">A</span>
-                        <span class="title">N</span>
-                        <span class="title">G</span>
-                    </div>
-                </h1>
+                <div id="title-container">
+                    <h1 id="title-text">
+                        <div>
+                            <span class="title">A</span>
+                            <span class="title">N</span>
+                            <span class="title">D</span>
+                            <span class="title">Y</span>
+                        </div>
+                        <div>
+                            <span class="title">C</span>
+                            <span class="title">H</span>
+                            <span class="title">A</span>
+                            <span class="title">N</span>
+                            <span class="title">G</span>
+                        </div>
+                    </h1>
+                    <div id="title-shadow"></div>
+                </div>
+
+                <div id="subtitle-container">
+                    <h3>A Funny and Quirky Subtitle!</h3>
+                </div>
             </div>
         </div>
     </body>
