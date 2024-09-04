@@ -30,13 +30,13 @@ a {
     height: 100%;
     width: 100%;
     
-    position: absolute;
+    position: fixed;
     overflow: hidden;
 }
 
 #background::before {
     content: "";
-    position: absolute;
+    position: fixed;
     background-image: url('/scaleTile.svg');
     left: -100vw;
     top: -100vh;
@@ -49,7 +49,7 @@ a {
 
 /* Body takes up the whole page */
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-y: scroll;
@@ -58,7 +58,7 @@ body {
 /* Layout for Nav - hovers above other content */
 #nav-flex {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 999;
     display: flex;

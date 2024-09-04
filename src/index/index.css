@@ -1,12 +1,20 @@
 /* -- Layout for the Home Page -- */
 
+/* Vertically center content, but make space for the navbar too */
+#page-flex {
+    box-sizing: border-box;
+    padding: 1em clamp(2%, 25px, 5%);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
 
-/* Layout content - Decor Left, Title Right */
+/* Layout content - Decor Left, Title Right; unless it is too small */
 #page {
     box-sizing: border-box;
-    height: 100%;
+    height: min-content;
     width: 100%;
-    padding: clamp(2%, 25px, 5%);
+    padding: 0px;
 
     display: flex;
     justify-content: center;
@@ -19,7 +27,11 @@
     flex: 0 1 50%;
 }
 
+#decor-container {
+    flex: 0 1 300px;
+}
+
 /* Navigation Menu needs space */
-#page {
+#page-flex {
     padding-bottom: 3.5em;
 }

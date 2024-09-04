@@ -1,17 +1,7 @@
 #decor-container {
     background-color: transparent;
-    
-    width: 50%;
-    aspect-ratio: 3/5;
+    aspect-ratio: 6/9;
     position: relative;
-}
-
-#thing {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 #decor-container {
@@ -39,7 +29,7 @@
     aspect-ratio: 1/1;
     clip-path: circle(50%);
     background: var(--sphere-color);
-    animation: orbitPath 3s infinite linear;
+    animation: orbitPath 30s infinite linear;
     offset-rotate: 90deg;
 
     --offset-percent: 0%;
@@ -77,7 +67,7 @@
     width: 60%;
     height: 60%;
 
-    animation: rotate3D 3s infinite alternate ease-in-out;
+    animation: rotate3D 30s infinite alternate linear;
     --offset-deg: 0deg;
     filter: blur(2px);
 
@@ -93,6 +83,7 @@
     }
 }
 
+/* Discs that spheres lie upon */
 .disc {
     position: absolute;
     top: 0%;

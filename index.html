@@ -13,6 +13,7 @@
     <script defer type="module" src="/shared.js"></script>
     <script defer type="module" src="./src/index/index.js"></script>
     <script defer type="module" src="./src/index/title.js"></script>
+    <script defer type="module" src="./src/index/decor.js"></script>
 
     <body>
         <div id="background"></div>
@@ -26,24 +27,38 @@
             </nav>
         </div>
 
-        <div id="page">
-            <div id="decor-container">I'm a placeholder!</div>
+        <div id="page-flex">
+            <div id="page">
+                <div id="decor-container">
+                        <svg>
+                            <defs>
+                                <radialGradient id="grad">
+                                    <stop offset="29%" stop-color="#96f2e4"/>
+                                    <stop offset="95%" stop-color="rgba(134, 163, 159, 0.3)"/>
+                                    <stop offset="100%" stop-color="rgba(134, 163, 159, 0.2)"/>
+                                  </radialGradient>
+                            </defs>
+                        </svg>
+                        <div id="top-disc" class="disc"></div>
+                        <div id="bottom-disc" class="disc"></div>
+                </div>
             
-            <h1 id="title-container">
-                <div>
-                    <span class="title">A</span>
-                    <span class="title">n</span>
-                    <span class="title">d</span>
-                    <span class="title">y</span>
-                </div>
-                <div>
-                    <span class="title">C</span>
-                    <span class="title">h</span>
-                    <span class="title">a</span>
-                    <span class="title">n</span>
-                    <span class="title">g</span>
-                </div>
-            </h1>
+                <h1 id="title-container">
+                    <div>
+                        <span class="title">A</span>
+                        <span class="title">N</span>
+                        <span class="title">D</span>
+                        <span class="title">Y</span>
+                    </div>
+                    <div>
+                        <span class="title">C</span>
+                        <span class="title">H</span>
+                        <span class="title">A</span>
+                        <span class="title">N</span>
+                        <span class="title">G</span>
+                    </div>
+                </h1>
+            </div>
         </div>
     </body>
 </html>

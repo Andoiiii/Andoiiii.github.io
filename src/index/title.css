@@ -1,7 +1,7 @@
 /* -- Setup for the Title and Animations -- */
 #title-container {
     --text-shadow-color: #72b8d2ff;
-    --text-size: clamp(2rem, 10vw, 5rem);
+    --text-size: clamp(2rem, 8vw, 5rem);
 }
 
 /* Layout and Sizing for title text */
