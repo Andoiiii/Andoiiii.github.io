@@ -32,6 +32,7 @@ a {
     
     position: fixed;
     overflow: hidden;
+    z-index: -2;
 }
 
 #background::before {
@@ -52,7 +53,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 /* Layout for Nav - hovers above other content */
@@ -98,4 +99,9 @@ nav .nav-link:hover {
 /* Text for screenreaders. Hidden for everyone else */
 nav a span {
     display: none;
+}
+
+.WIP {
+    background-color: red;
+    z-index: 55;
 }

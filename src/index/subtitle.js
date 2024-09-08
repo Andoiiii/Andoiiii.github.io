@@ -6,7 +6,7 @@ function randomSubtitle() {
     if (rng <= 0.02) { return 'This site hides some secrets... 🔎' }
     if (rng <= 0.05) { return 'A Funny and Quirky Subtitle! ~' }
     if (rng <= 0.10) { return 'Suffering from Coding Block' }
-    if (rng <= 0.20) { return 'Is disliking AI justified or heresy?' }
+    if (rng <= 0.20) { return 'Recursion, Recursion, Recursion...' }
     if (rng <= 0.35) { return 'Suprisingly likes pen and paper 📜' }
     if (rng <= 0.50) { return 'I hope you like these subtitles :)' }
     if (rng <= 0.65) { return 'I dont actually use emoji irl that much'}
