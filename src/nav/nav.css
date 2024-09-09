@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-nav {
+#nav-flex nav {
     background-color: var(--tile-color-80);
     padding: 0px 1em;
     border-radius: 1em 1em 0 0;
@@ -21,24 +21,24 @@ nav {
     gap: 0em 1em;
 }
 
-nav a i {
+#nav-flex nav a i {
     font-size: 1.5em;
     transition: font-size 0.3s ease-in-out;
 }
 
-i.bi-dot {
+#nav-flex i.bi-dot {
     font-size: 2em;
 }
 
-div.disabled {
+#nav-flex div.disabled {
     pointer-events: none;
 }
 
-nav .nav-link:hover {
+#nav-flex nav .nav-link:hover {
     font-size: 1.8em;
 }
 
 /* Text for screenreaders. Hidden for everyone else */
-nav a span {
+#nav-flex nav a span {
     display: none;
 }
