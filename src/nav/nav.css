@@ -1,0 +1,44 @@
+/* Layout for Nav - hovers above other content */
+#nav-flex {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: var(--tile-color-80);
+    padding: 0px 1em;
+    border-radius: 1em 1em 0 0;
+    border: var(--background-color-80) 3px solid;
+    border-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0em 1em;
+}
+
+nav a i {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+}
+
+i.bi-dot {
+    font-size: 2em;
+}
+
+div.disabled {
+    pointer-events: none;
+}
+
+nav .nav-link:hover {
+    font-size: 1.8em;
+}
+
+/* Text for screenreaders. Hidden for everyone else */
+nav a span {
+    display: none;
+}
